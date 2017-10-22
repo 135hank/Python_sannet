@@ -1,0 +1,125 @@
+#while 循环
+account = 'admin'
+password = '123'
+a = 1
+
+while a <= 3  :
+    input_name = input('请输入账号：')
+    input_password = input('请输入密码：')
+    a += 1
+    if input_name == account and input_password == password :
+        print('登陆成功，登陆账户为：' + account)
+    elif input_name != account or input_password != password :
+        print('登陆失败，当前剩余尝试次数：' + str(3-a))
+    else :
+        print('账户已锁定')
+    
+    break
+else :
+    print('While finished')
+
+'''account = 'admin'
+password = '123'
+a = 1
+
+while a <= 3  :
+    input_name = input('请输入账号：')
+    input_password = input('请输入密码：')
+    if input_name == account and input_password == password :
+        print('Login success!Login aoount :' + 'account')
+        break
+    a+=1
+else :                                                      #while所有语句运行完后，会进行else语句
+    print('Login Failed,account has been blocked')
+
+print('Finished') '''
+
+
+'''list_a = [1,5,8]
+list_b = [3,6,9]
+list_c = []
+d = 0
+while d <len(list_a):
+    list_c.append(list_a[d] + list_b[d])
+    d += 1
+
+print(list_c)'''
+
+
+''' a  = 1
+b = 0
+while a <= 100:
+    b += a
+    a += 1
+print(b) '''
+
+
+
+''' i=0
+c=[]
+d=0
+list_a = [1,2,3,5,10,22,35]
+while i < len(list_a):
+    if list_a[i] % 5 == 0:
+        d = list_a[i]
+        c.append(d)
+    i+=1
+
+print(c)'''
+
+
+
+
+
+
+
+
+
+
+#字典函数
+'''dict = {
+     'hank':101,
+     'james':102,
+     'gavin':103
+    }
+#student_id = 103
+#d.keys()
+#d.values()
+#for student in dict.keys():
+#   #print(d[i]) 打印工号
+#    if dict[student] == student_id:
+#       print(student)
+for student,student_id in dict.items():
+    print(student + ':' + str(student_id))'''
+
+
+
+'''list_a = [1,2,5]
+list_b = [7,8,9]
+c = []
+a = 0
+for a in range(3):
+    b = list_a[a]+list_b[a]
+    c.append(b)
+
+
+print(c)'''
+
+
+
+
+
+
+
+
+
+
+
+
+'''list_a = range(1,101)   #声明列表
+b=[]                    #声明空列表
+for a in list_a:
+    if a  % 2  ==1:
+        b.append(a)
+print(b)'''
+
